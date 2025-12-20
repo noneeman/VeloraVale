@@ -15,6 +15,36 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#1c1917",
+              mist: "#faf8f5",
+              paper: "#f3f0ea",
+              stone: "#78716c",
+              clay: "#a8a29e",
+              line: "#e7e2d9",
+              accent: "#5c5347",
+              accentsoft: "#8a7f72",
+            },
+            fontFamily: {
+              display: ["Cormorant Garamond", "Georgia", "serif"],
+              sans: ["DM Sans", "system-ui", "sans-serif"],
+            },
+            letterSpacing: {
+              cap: "0.22em",
+            },
+            maxWidth: {
+              measure: "38rem",
+              content: "72rem",
+            },
+          },
+        },
+      };
+    </script>
   <body class="bg-mist font-sans text-ink text-[15px] leading-relaxed antialiased">
     <a
       href="#main"
